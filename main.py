@@ -1,14 +1,9 @@
-# def armstrong(n):
-#   arr = list(map(int ,str(n)))
-#   final = 0
-#   for i in arr:
-#     temp = i * i * i
-#     final += temp
+start = int(input("Enter Start: "))
+end = int(input("Enter End: "))
 
-#     return final
-
-
-# print(armstrong(str(input("Enter a number: "))))
-
-
-
+for i in range(start, end+1):
+    for x in range(2, i):
+      if(i%x ==0):
+        break
+    else:  
+      print(i)
